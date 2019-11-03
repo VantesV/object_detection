@@ -416,28 +416,28 @@ def write_image(img, filename):
 def main():
 
     images = ["004945", "004964", "005002"]
-    # for img in images:
-    #     compute_depth(img)
+    for img in images:
+        compute_depth(img)
 
     input_txt = ["image3", "image4", "image5"]
-    # store_strong_bounds(images[0], input_txt[0])
-    # store_strong_bounds(images[1], input_txt[1])
-    # store_strong_bounds(images[2], input_txt[2])
-    # visualize_detections(images[0])
-    # visualize_detections(images[1])
-    # visualize_detections(images[2])
+    store_strong_bounds(images[0], input_txt[0])
+    store_strong_bounds(images[1], input_txt[1])
+    store_strong_bounds(images[2], input_txt[2])
+    visualize_detections(images[0])
+    visualize_detections(images[1])
+    visualize_detections(images[2])
 
-    # get_3D_locations(images[0])
-    # get_3D_locations(images[1])
-    # get_3D_locations(images[2])
+    get_3D_locations(images[0])
+    get_3D_locations(images[1])
+    get_3D_locations(images[2])
 
-    # segment(images[0])
-    # segment(images[1])
-    # segment(images[2])
+    segment(images[0])
+    segment(images[1])
+    segment(images[2])
 
-    # show_descriptions(images[0])
-    # show_descriptions(images[1])
-    # show_descriptions(images[2])
+    show_descriptions(images[0])
+    show_descriptions(images[1])
+    show_descriptions(images[2])
 
 if __name__ == '__main__':
     main()
